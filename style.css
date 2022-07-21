@@ -7,3 +7,233 @@
 }
 
 /* Write CSS code below */
+
+body{
+    background-color: lightblue;
+}
+
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    background: white;
+    margin: 20px auto;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);   
+    display: grid;
+    grid-template-columns: 300px 700px;  
+}
+
+.main-content .left-section{
+    width: 300px;
+    background: #003147;
+    grid-column: span 1;
+}
+
+.main-content .right-section{
+    width: 700px;
+    background: #fff;
+    grid-column: span 1 / span 2;
+}
+
+.left-content{
+    padding: 1rem;
+}
+ .profile-image{
+    display: block;
+    justify-content: center;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 30%;
+    width: 60%;
+}
+
+.name{
+    font-size: 1.2rem;
+    color: aliceblue;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+
+.designation{
+    font-size: 1rem;
+    color: aqua;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+
+.description{
+    color: azure;
+    letter-spacing: 0.2px;
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.social-media {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.icon a{
+    color: #0077b5; 
+}
+
+.personal-details{
+    padding-top: 15px;
+    margin: 2px;
+    color: #fff;
+    list-style: none;
+    line-height: 2rem;
+}
+
+.skills{
+    color: #fff;
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+}
+
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+
+.progress-bar{
+    background-color: #fff;
+    margin-bottom: 7px;
+    padding-bottom: 5px;
+    border: 1px white solid;
+    height: 4px;
+}
+
+.right-main-content{
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+
+ .education-sect h2{
+    padding-top: 25px;
+}
+
+.education-content{
+    padding-top: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+ .education-content .degree-name{
+    min-width: 50px;
+} 
+
+.degree-name p{
+    padding-top: 10px;
+}
+
+.education-content .degree-name h3{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.education-content .college-name{
+    padding-left: 100px;
+    margin-bottom: 10px;
+}
+
+.college-name .year{
+    padding-top: 10px;
+}
+
+/* .education-content .college-name1{
+    padding-left: 100px;
+    margin-bottom: 10px;
+} */
+
+.college-name1 .year{
+    padding-top: 10px;
+}
+/* -------------------------------------------------- */
+
+.experience-section h2{
+    padding-top: 25px;
+}
+
+.experience-content{
+    padding-top: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+ /* .experience-content .post-name{
+    min-width: 30px;
+}  */
+
+.post-name p{
+    padding-top: 10px;
+}
+
+.experience-content .post-name h3{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.experience-content .company-name{
+    padding-left: 180px;
+    margin-bottom: 10px;
+}
+
+.company-name .year{
+    padding-top: 10px;
+}
+
+/* ------------------------------------------------- */
+
+
+.project-content{
+    padding-top: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.project-name p{
+    padding-top: 10px;
+}
+
+.project-content .project-name h3{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.project-content .lang-name{
+    padding-left: 80px;
+    margin-bottom: 10px;
+}
+
+.lang-name .year{
+    padding-top: 10px;
+}
+
+/* --------------------------------------------------------- */
+
+@media screen and (max-width: 673px){
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
